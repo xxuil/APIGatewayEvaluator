@@ -1,15 +1,16 @@
 package com.guba.test.gateway;
 
-import org.apache.hadoop.conf.Configured;
-import org.apache.hadoop.util.Tool;
+import com.guba.test.gateway.hadoop.GatewayRunner;
+import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.util.ToolRunner;
 
-public class Evaluator extends Configured implements Tool {
-    @Override
-    public int run(String[] strings) throws Exception {
-        return 0;
-    }
-
-    public static void main(String[] args) {
-
+/**
+ * @author Xiangxing Liu
+ * @date 2019/11/12
+ */
+public class Evaluator  {
+    public static void main(String[] args) throws Exception {
+        int res = ToolRunner.run(new Configuration(), new GatewayRunner(), args);
+        System.exit(res);
     }
 }

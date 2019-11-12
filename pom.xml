@@ -19,11 +19,6 @@
             <artifactId>hadoop-core</artifactId>
             <version>1.2.1</version>
         </dependency>
-        <dependency>
-            <groupId>com.bs</groupId>
-            <artifactId>com.bs.util</artifactId>
-            <version>1.0</version>
-        </dependency>
     </dependencies>
 
     <build>
@@ -35,7 +30,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.hyTest.ParquetWriter</mainClass>
+                            <mainClass>com.guba.test.gateway.Evaluator</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
